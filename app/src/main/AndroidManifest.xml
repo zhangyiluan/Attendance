@@ -33,6 +33,9 @@
         <activity android:name=".kebiao.KBMainActivity">
 
         </activity>
+        <activity android:name=".Fragment.LianXiactivity">
+
+        </activity>
         <receiver android:name=".kebiao.WidgetProvider" >
             <intent-filter android:priority="1000" >
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

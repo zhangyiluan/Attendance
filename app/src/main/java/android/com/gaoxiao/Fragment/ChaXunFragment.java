@@ -63,10 +63,10 @@ public class ChaXunFragment extends Fragment implements SwipeRefreshLayout.OnRef
     void initData(){
 
         list = new ArrayList<MsgListItem>();
-        listView = (ListView) view.findViewById(R.id.msg_list);
-        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.swipeContainer);
+        listView = (ListView) view.findViewById(R.id.cx_list);
+        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.cxswipeContainer);
         swipeContainer.setOnRefreshListener(this);
-        msgListAdapter = new MsgListAdapter(getActivity(),R.id.msg_list,list);
+        msgListAdapter = new MsgListAdapter(getActivity(),R.id.cx_list,list);
         MsgListItem msgListItem = new MsgListItem(R.drawable.avatar_03,"编译原理","","","");
         list.add(msgListItem);
 

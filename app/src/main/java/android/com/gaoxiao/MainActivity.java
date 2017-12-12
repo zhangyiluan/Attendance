@@ -71,15 +71,16 @@ public class MainActivity extends AppCompatActivity  implements RadioGroup.OnChe
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId){
+            case R.id.contact_rbtn:
+            switchFragment(new ChaXunFragment());
+            break;
             case R.id.kebiao:
                 switchFragment(new kbFragment());
                 break;
             case R.id.msg_rbtn:
                 switchFragment(new MsgFragment());
                 break;
-            case R.id.contact_rbtn:
-                switchFragment(new ChaXunFragment());
-                break;
+
             case R.id.qzone_rbtn:
                 switchFragment(new QzoneFragment());
                 break;

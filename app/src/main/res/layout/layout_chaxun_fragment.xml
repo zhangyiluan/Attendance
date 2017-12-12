@@ -8,13 +8,13 @@
 
     <include layout="@layout/layout_searchbar"/>
     <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/swipeContainer"
+        android:id="@+id/cxswipeContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         >
         <ListView
-            android:id="@+id/msg_list"
+            android:id="@+id/cx_list"
             android:fastScrollEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="20dp"
