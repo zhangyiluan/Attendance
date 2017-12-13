@@ -10,17 +10,17 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/cxkqxx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="考勤信息" />
         <Button
-            android:id="@+id/button"
+            android:id="@+id/qingjia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="请假" />
         <Button
-        android:id="@+id/button2"
+        android:id="@+id/qiandao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="签到" />
