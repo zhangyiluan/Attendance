@@ -4,7 +4,16 @@
     android:background="@drawable/skin_conversation_bg"
     android:orientation="vertical"
     >
+
+    <Button
+        android:id="@+id/wodekebiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的课表" />
+
     <include layout="@layout/widget"/>
+
+    <include layout="@layout/widget" />
 
 
 </LinearLayout>
