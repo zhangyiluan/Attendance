@@ -50,10 +50,6 @@
 
         </activity>
         <receiver android:name=".kebiao.WidgetProvider" >
-            <intent-filter android:priority="1000" >
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.kui.WidgetUpdate" />
-            </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/provider" />

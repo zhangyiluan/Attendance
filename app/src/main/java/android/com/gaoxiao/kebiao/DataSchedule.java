@@ -28,9 +28,11 @@ enum ClassTime{
     one,two,three,four,five
 }
 
-class DataSchedule{
-    ArrayList<Class> classData;
+public class DataSchedule{
+    public ArrayList<Class> classData;
     private Context context;
+
+
     DataSchedule(Context c){
         context = c;
         classData = new ArrayList<>();
@@ -122,9 +124,9 @@ class DataSchedule{
 class Class implements Serializable {
     Week week;
     ClassTime classTime;
-    String className = null,
-            teacherName = null,
-            classRoom = null;
+    public String className = null;
+    String teacherName = null;
+    String classRoom = null;
     Frequency frequency;
 }
 
