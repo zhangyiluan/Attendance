@@ -15,7 +15,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 public class WidgetProvider extends AppWidgetProvider {
-    static final String broadCastString = "com.kui.WidgetUpdate";//定义我们要发送的事件
+    static final String broadCastString = "android.com.gaoxiao.kebiao.WidgetUpdate";//定义我们要发送的事件
     @Override
     public void onDeleted(Context context, int[] appWidgetIds) {
         // TODO Auto-generated method stub
