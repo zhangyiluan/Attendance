@@ -45,12 +45,20 @@
 
         <!--//kebiao-->
         <activity android:name=".kebiao.KBMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Fragment.LianXiactivity">
 
         </activity>
         <receiver android:name=".kebiao.WidgetProvider" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.kui.WidgetUpdate" />
+            </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/provider" />

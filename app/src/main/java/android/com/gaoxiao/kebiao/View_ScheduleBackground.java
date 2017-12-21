@@ -53,7 +53,7 @@ public class View_ScheduleBackground extends View {
         canvas.drawRect(0, 0, width, top, drawRectPaint);
         canvas.drawRect(0, 0, left, height, drawRectPaint);
         drawRectPaint.setColor(0xff808080);
-        roomWidth = (width - left) / 7;
+        roomWidth = (width - left) /5;
         for (char i = 1; i < 7;i++ ) {//竖线
             canvas.drawLine(roomWidth * i + left, 0, roomWidth * i + left, height, drawRectPaint);
         }
@@ -65,7 +65,7 @@ public class View_ScheduleBackground extends View {
         canvas.drawLine(0, top, width, top, drawRectPaint);//横线
         canvas.drawLine(left, 0, left, height, drawRectPaint);//竖线
 
-        String[] s1 = {"一", "二", "三", "四", "五","六","七"};
+        String[] s1 = {"一", "二", "三", "四", "五"};
         int z = left + roomWidth / 2;
         for(char i=0;i<s1.length;i++) {
             canvas.drawText(s1[i], z + roomWidth * i, top - 20, textPaint);
