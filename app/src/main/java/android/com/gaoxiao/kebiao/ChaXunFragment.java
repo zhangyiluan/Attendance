@@ -1,9 +1,8 @@
-package android.com.gaoxiao.Fragment;
+package android.com.gaoxiao.kebiao;
 
 import android.com.gaoxiao.Adapter.MsgListAdapter;
 import android.com.gaoxiao.Item.MsgListItem;
 import android.com.gaoxiao.R;
-import android.com.gaoxiao.kebiao.DataSchedule;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -47,6 +46,7 @@ public class ChaXunFragment extends Fragment implements SwipeRefreshLayout.OnRef
     private List<MsgListItem> list;
     private MsgListAdapter msgListAdapter;
     private ListView listView;
+    private TextView className;
     private SwipeRefreshLayout swipeContainer;//下拉刷新
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -76,4 +76,5 @@ public class ChaXunFragment extends Fragment implements SwipeRefreshLayout.OnRef
             }
         }, 1000);
     }
+
 }

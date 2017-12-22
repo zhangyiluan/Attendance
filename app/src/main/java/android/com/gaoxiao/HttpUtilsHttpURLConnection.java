@@ -17,7 +17,7 @@ import java.util.Map;
 
 public class HttpUtilsHttpURLConnection {
 
-    public static String BASE_URL= "http://你的ip地址:8080/Android";
+    public static String BASE_URL= "";
     /*
      * urlStr:网址
      * parms：提交数据

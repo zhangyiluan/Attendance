@@ -1,6 +1,6 @@
 package android.com.gaoxiao;
 
-import android.com.gaoxiao.Fragment.ChaXunFragment;
+import android.com.gaoxiao.kebiao.ChaXunFragment;
 import android.com.gaoxiao.Fragment.MsgFragment;
 import android.com.gaoxiao.Fragment.QzoneFragment;
 import android.com.gaoxiao.Fragment.kbFragment;

@@ -60,15 +60,15 @@ public class LoginActivity extends BaseActivity  {
                     public void run() {
                         String url=HttpUtilsHttpURLConnection.BASE_URL+"/servlet/LoginServlet";
                         Map<String, String> params = new HashMap<String, String>();
-                        String name=nameEdit.getText().toString();
+                        String account=nameEdit.getText().toString();
                         String password=passwordEdit.getText().toString();
-                        params.put("name",name);
+                        params.put("name",account);
                         params.put("password",password);
 
                         editor = pref.edit();
                         if (rememberPass.isChecked()) { // 检查复选框是否被选中
                             editor.putBoolean("remember_password", true);
-                            editor.putString("name", name);
+                            editor.putString("account", account);
                             editor.putString("password", password);
                         } else {
                             editor.clear();

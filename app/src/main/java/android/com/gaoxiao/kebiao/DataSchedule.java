@@ -33,7 +33,7 @@ public class DataSchedule{
     private Context context;
 
 
-    DataSchedule(Context c){
+    public DataSchedule(Context c){
         context = c;
         classData = new ArrayList<>();
     }
@@ -119,9 +119,12 @@ public class DataSchedule{
             return false;
         }
     }
+
+
 }
 
 class Class implements Serializable {
+
     Week week;
     ClassTime classTime;
     public String className = null;
